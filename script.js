@@ -5,7 +5,7 @@ async function CallAPI(CityNameInput) {
     const CityName = CityNameInput;
 
     const BuildRequest = new Request(
-        `http://api.weatherapi.com/v1/current.json?key=a2d4f81ad30b4d0689d44909252407&q=${CityName}`,
+        `https://api.weatherapi.com/v1/current.json?key=a2d4f81ad30b4d0689d44909252407&q=${CityName}`,
         {
             method: "GET",
             mode: "cors",
