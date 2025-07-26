@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Welcome to Weather Report</h1>
+    <div>
+        <div class="Weather_Box">
+            <div class="Search_Section">
+                <label>Put City name :</label>
+                <input placeholder="City name" type="text" id="CityInput">
+                <button class="SubmitButton">Search</button>
+            </div>
+            <div class="ToggleButton">
+                <label>Celcius</label>
+                <label class="switch">
+                    <input type="checkbox" class="CheckUnit">
+                    <span class="slider round"></span>
+                </label>
+                <label>Fahrenheit</label>
+            </div>
+            <div>
+                <h2 id="CityName"></h2>
+                <div class="Weather_Report">
+                    <img id="WeatherImg">
+                    <h3 id="Tempurture"></h3>
+                    <h3 id="Condition"></h3>
+                    <div id="loading-screen">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
